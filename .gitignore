@@ -1,0 +1,28 @@
+__pycache__/
+.venv/
+
+*.srt
+*.wav
+options.json
+
+# Created files
+*.srt
+summary-*.md
+transcript-*.txt
+*.wav
+options.json
+
+# Testing
+testing.py
+
+# Build
+dist/
+build/
+*.egg-info/
+.aider*
+
+
+# Ruff
+
+.ruff_cache/
+.zed/

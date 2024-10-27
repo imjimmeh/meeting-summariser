@@ -1,0 +1,6 @@
+MainEvent = "MainEvent"
+AudioEvent = "AudioChunk"
+AudioRecorderFinished = "AudioRecorderFinished"
+TranscriptionChanged = "TranscriptionChanged"
+TranscriptionFinished = "TranscriptionFinished"
+SummaryFinished = "SummaryFinished"
