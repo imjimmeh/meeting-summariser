@@ -8,7 +8,6 @@ from meetingsummariser.options import Options
 type OnSaveCallback = Callable[[OptionsManager], None]
 DEFAULT_OPTIONS_FILENAME = "options.json"
 
-
 class OptionsManager:
     on_save_callbacks: Dict[str, OnSaveCallback] = {}
     file_name: str

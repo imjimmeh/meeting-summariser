@@ -1,9 +1,11 @@
 from pydantic import BaseModel
 
-PARAGRAPH_SUMMARY_PROMPT = """You are an expert summarization assistant.
-Your task is to distill the following paragraph into a concise summary that captures its essential ideas and key points. Focus on clarity and coherence.
+PARAGRAPH_SUMMARY_PROMPT = """You are an AI tasked with summarizing meeting transcripts in small, digestible sections.
+For each provided transcript chunk, create a concise summary that covers the main discussion points, key decisions, actions taken or assigned, and any important takeaway actions.
+Where relevant, capture the intent behind discussions or actions.
+Ensure that each summary reflects the essential information clearly and concisely.
 
-Return your result as a markdown formatted list, with up to 10 bulletpoints. Do not return any other explanation, description, comments, etc. in your response."""
+Return your result as a markdown formatted list. Do not return any other explanation, description, comments, etc. in your response."""
 
 AGGREGATE_SUMMARIES_PROMPT = """You are an expert summarization assistant.
 Below are summaries from various sections of a meeting transcript. Your goal is to synthesize these summaries into a cohesive overview.
