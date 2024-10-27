@@ -34,3 +34,6 @@ class PromptOptionsGUI(OptionsSection):
             "aggregate_summaries", self.aggregate_summaries_prompt_input
         )
         self.update_prompt_option("final_output", self.final_output_prompt_input)
+
+    def on_save(self):
+        self.update_prompt_options()
