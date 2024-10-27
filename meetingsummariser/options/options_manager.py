@@ -20,7 +20,7 @@ class OptionsManager:
         self.file_name = DEFAULT_OPTIONS_FILENAME
         self.files = files
         self.options = Options()
-        self.load_options()
+        self.load()
 
     def load_options(self):
         file_contents = self.files.read_file(self.file_name)
